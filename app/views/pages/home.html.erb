@@ -1,0 +1,17 @@
+<h1 style="color:red;background-color:yellow;">Welcome to the People Reader!</h1>
+
+<p>This is a tool for bucketing bloggers into their social subgroups.</p>
+
+<p>Insert the URL of a blog, and this application will analyze the blogger's language<br>to assign him a stereotype.</p>
+
+<%= form_for :search do |f| %>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p><%= Time.now %></p>
